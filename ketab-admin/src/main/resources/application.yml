@@ -1,0 +1,19 @@
+spring:
+  jpa:
+   database-platform: org.hibernate.dialect.MySQLDialect
+  jmx:
+    enabled: false
+    
+    
+app:
+  datasource:
+    lookupName: java:comp/env/jdbc/ketab-admin-ds
+    bindName: jdbc/ketab-admin-ds
+    username: root
+    password: managedBean@6
+    url: jdbc:mysql://localhost:3306/ketab-admin
+    driverClassName: com.mysql.jdbc.Driver
+    
+server:
+  context-path: /ketab-admin
+  port: 8888
