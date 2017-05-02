@@ -5,8 +5,3 @@ spring:
     config:
       discovery:
         serviceId: ketab-config
-
-        
-server:
-  context-path: /ketab-config
-  port: 1010
