@@ -6,6 +6,14 @@ spring:
       server:
         git:
           uri: https://github.com/aomargithub/ketab-config-repo
-        
+          
+eureka:
+  client: 
+    serviceUrl:
+      defaultZone: http://localhost:8761/ketab-discovery/
+  instance:
+    hostname: localhost
 
-            
+server:
+  context-path: /ketab-config
+  port: 8888

@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ketab-discovery
+    
+server:
+  context-path: /ketab-discovery
+  port: 8761
+    
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/${server.context-path}/
+  instance:
+    hostname: localhost
+  server:
+    enableSelfPreservation: false
+    waitTimeInMsWhensyncEmpty: 0
+    numberRegistrySyncRetries: 0
+    response-cache-update-interval-ms: 1000
