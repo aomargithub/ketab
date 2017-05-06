@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ketab-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/aomargithub/ketab-config-repo.git
+          username: aomargithub
+          password: w@rr0ntyExpre$5
+server:
+  context-path: /ketab-config
+  port: 8888

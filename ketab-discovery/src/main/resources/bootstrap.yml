@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ketab-admin
+    name: ketab-discovery
   cloud:
     config:
      uri: http://localhost:8888/ketab-config
