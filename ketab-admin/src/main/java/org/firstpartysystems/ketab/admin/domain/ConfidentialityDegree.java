@@ -21,8 +21,8 @@ public class ConfidentialityDegree implements DomainModel<Byte>{
 	@Column(name = "id")
 	private Byte id;
 	
-	@Column(name = "lookup_code")
-	private String lookupCode;
+	@Column(name = "code")
+	private String code;
 	
 	@Column(name = "description")
 	private String description;
@@ -32,14 +32,6 @@ public class ConfidentialityDegree implements DomainModel<Byte>{
 	
 	@Embedded
 	private CreateUpdateLog createUpdateLog;
-
-	public String getLookupCode() {
-		return lookupCode;
-	}
-
-	public void setLookupCode(String lookupCode) {
-		this.lookupCode = lookupCode;
-	}
 
 	public String getDescription() {
 		return description;
@@ -73,6 +65,14 @@ public class ConfidentialityDegree implements DomainModel<Byte>{
 
 	public void setIsActive(Boolean isActive) {
 		this.isActive = isActive;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
 	}
 
 }
