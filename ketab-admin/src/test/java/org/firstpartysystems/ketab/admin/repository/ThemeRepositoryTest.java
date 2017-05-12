@@ -4,8 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.List;
 
-import org.firstpartysystems.ketab.admin.domain.ConfidentialityDegree;
-import org.junit.Before;
+import org.firstpartysystems.ketab.admin.domain.Theme;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,35 +15,28 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @ActiveProfiles("test")
-public class ConfidentialityDegreeRepositoryTest {
-	
-	private final static byte NumberOfBuiltInDegrees = 8;
-	
+public class ThemeRepositoryTest {
+
+	private final static byte NumberOfBuiltInThemes = 3;
 	
 	@Autowired
-    private ConfidentialityDegreeRepository repository;
-	
-	@Before
-	public void setup(){
-		
-	}
+    private ThemeRepository repository;
 	
 	@Test
     public void findByIsActive_true_success() {
 		
 		
-        List<ConfidentialityDegree> confidentialityDegrees = this.repository.findByIsActive(true);
+        List<Theme> themes = this.repository.findByIsActive(true);
         
-        assertThat(confidentialityDegrees.size()).isEqualTo(NumberOfBuiltInDegrees);
+        assertThat(themes.size()).isEqualTo(NumberOfBuiltInThemes);
     }
 	
 	@Test
     public void findByIsActive_false_success() {
 		
 		
-        List<ConfidentialityDegree> confidentialityDegrees = this.repository.findByIsActive(false);
+        List<Theme> themes = this.repository.findByIsActive(false);
         
-        assertThat(confidentialityDegrees.size()).isEqualTo(1);
+        assertThat(themes.size()).isEqualTo(1);
     }
-	
 }

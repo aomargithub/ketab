@@ -18,7 +18,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @ActiveProfiles("test")
 public class ConfidentialityDegreeServiceTest {
 	
-	private final static byte NumberOfBuiltInDegrees = 7;
+	private final static byte NumberOfBuiltInDegrees = 8;
 	
 	@Autowired
     private ConfidentialityDegreeService confidentialityDegreeService;

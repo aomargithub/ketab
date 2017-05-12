@@ -20,9 +20,11 @@ public class ConfidentialityDegreeMapper extends AbstractModelMapper<Confidentia
 		
 		if(isConvertable(entity)){
 			dto = new ConfidentialityDegreeDto();
+			
 			dto.setId(entity.getId());
-			dto.setDescription(entity.getDescription());
 			dto.setCode(entity.getCode());
+			dto.setPrecedence(entity.getPrecedence());
+			dto.setDescription(entity.getDescription());
 		}
 		
 		return dto;
@@ -34,9 +36,11 @@ public class ConfidentialityDegreeMapper extends AbstractModelMapper<Confidentia
 		
 		if(isConvertable(dto)){
 			entity = new ConfidentialityDegree();
+			
+			entity.setCode(dto.getCode());
+			entity.setPrecedence(dto.getPrecedence());
 			entity.setId(nullId ? null : dto.getId());
 			entity.setDescription(dto.getDescription());
-			entity.setCode(dto.getCode());
 		}
 		
 		return entity;

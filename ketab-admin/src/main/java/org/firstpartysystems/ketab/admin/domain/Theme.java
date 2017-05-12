@@ -11,13 +11,13 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 @Entity
-@Table(name = "confidentiality_degree")
-public class ConfidentialityDegree extends LookupEntity<Byte>{
+@Table(name = "theme")
+public class Theme extends LookupEntity<Byte>{
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -8320050401392880950L;
+	private static final long serialVersionUID = -688423162639467979L;
 	
 	@Id
 	@GeneratedValue
@@ -27,20 +27,17 @@ public class ConfidentialityDegree extends LookupEntity<Byte>{
 	@Column(name = "description")
 	private String description;
 	
-	@Column(name = "precedence")
-	private Byte precedence;
-	
 	public boolean equals(Object object){
 		
 		if(object == null){
 			return false;
 		}
 		
-		if(!(object instanceof ConfidentialityDegree)){
+		if(!(object instanceof Theme)){
 			return false;
 		}
 		
-		ConfidentialityDegree other = (ConfidentialityDegree) object;
+		Theme other = (Theme) object;
 		
 		return new EqualsBuilder().append(getCode(), other.getCode()).isEquals();
 	}
@@ -52,15 +49,6 @@ public class ConfidentialityDegree extends LookupEntity<Byte>{
 	public String toString(){
 		return new ToStringBuilder(this).append(getId()).append(getCode()).append(getDescription()).toString();
 	}
-	
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
 
 	@Override
 	public Byte getId() {
@@ -71,13 +59,13 @@ public class ConfidentialityDegree extends LookupEntity<Byte>{
 	public void setId(Byte id) {
 		this.id = id;
 	}
-	
-	public Byte getPrecedence() {
-		return precedence;
+
+	public String getDescription() {
+		return description;
 	}
 
-	public void setPrecedence(Byte precedence) {
-		this.precedence = precedence;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 }

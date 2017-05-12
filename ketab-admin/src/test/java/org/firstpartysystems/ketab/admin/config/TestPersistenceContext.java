@@ -14,7 +14,7 @@ public class TestPersistenceContext {
 
 	@Bean
 	public DataSource dataSource() {
-		return new EmbeddedDatabaseBuilder().setName("jdbc:h2:mem:testdb;MODE=MYSQL").setType(EmbeddedDatabaseType.H2)
+		return new EmbeddedDatabaseBuilder().setName("jdbc:h2:mem:ketab-admin;MODE=MYSQL").setType(EmbeddedDatabaseType.H2)
 				.addScripts("db-schema.sql", "db-test-data.sql").build();
 	}
 }

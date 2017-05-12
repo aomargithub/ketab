@@ -4,17 +4,17 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-public class ConfidentialityDegreeDto implements UserModel<Byte>{
+public class NotificationChannelDto implements UserModel<Byte>{
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -5881191981188613950L;
+	private static final long serialVersionUID = 1953687407623218328L;
 	
 	private Byte id;
 	private String code;
 	private String description;
-	private Byte precedence;
+	
 	
 	public boolean equals(Object object){
 		
@@ -22,11 +22,11 @@ public class ConfidentialityDegreeDto implements UserModel<Byte>{
 			return false;
 		}
 		
-		if(!(object instanceof ConfidentialityDegreeDto)){
+		if(!(object instanceof NotificationChannelDto)){
 			return false;
 		}
 		
-		ConfidentialityDegreeDto other = (ConfidentialityDegreeDto) object;
+		NotificationChannelDto other = (NotificationChannelDto) object;
 		
 		return new EqualsBuilder().append(getCode(), other.getCode()).isEquals();
 	}
@@ -49,14 +49,6 @@ public class ConfidentialityDegreeDto implements UserModel<Byte>{
 		this.id = id;
 	}
 
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
 	public String getCode() {
 		return code;
 	}
@@ -65,12 +57,12 @@ public class ConfidentialityDegreeDto implements UserModel<Byte>{
 		this.code = code;
 	}
 
-	public Byte getPrecedence() {
-		return precedence;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setPrecedence(Byte precedence) {
-		this.precedence = precedence;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 }
