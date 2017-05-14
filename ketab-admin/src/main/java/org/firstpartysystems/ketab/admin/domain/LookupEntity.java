@@ -3,7 +3,9 @@ package org.firstpartysystems.ketab.admin.domain;
 import java.io.Serializable;
 
 import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
 
+@MappedSuperclass
 public abstract class LookupEntity<T extends Serializable> extends DomainEntity<T>{
 
 	/**

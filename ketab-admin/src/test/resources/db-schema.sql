@@ -10,9 +10,9 @@ CREATE TABLE `confidentiality_degree` (
   `precedence` int(11) NOT NULL,
   `orm_version` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `lookup_code_UNIQUE` (`code`),
-  UNIQUE KEY `description_UNIQUE` (`description`)
-);
+  UNIQUE KEY `confidentiality_degree_code_UNIQUE` (`code`),
+  UNIQUE KEY `confidentiality_degree_description_UNIQUE` (`description`)
+) ;
 
 
 CREATE TABLE `notification_channel` (
@@ -26,7 +26,7 @@ CREATE TABLE `notification_channel` (
   `is_active` tinyint(1) NOT NULL,
   `orm_version` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `code_UNIQUE` (`code`)
+  UNIQUE KEY `notification_channel_code_UNIQUE` (`code`)
 );
 
 
@@ -41,5 +41,5 @@ CREATE TABLE `theme` (
   `description` varchar(200) NOT NULL,
   `orm_version` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `code_UNIQUE` (`code`)
-);
+  UNIQUE KEY `theme_code_UNIQUE` (`code`)
+)  ;
