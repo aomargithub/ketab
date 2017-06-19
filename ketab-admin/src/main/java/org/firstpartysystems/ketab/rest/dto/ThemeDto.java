@@ -4,14 +4,13 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-public class ThemeDto implements UserModel<Byte>{
+public class ThemeDto extends AbstractUserModel<Byte>{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -7599317787017155054L;
 	
-	private Byte id;
 	private String code;
 	private String description;
 	
@@ -37,16 +36,6 @@ public class ThemeDto implements UserModel<Byte>{
 	
 	public String toString(){
 		return new ToStringBuilder(this).append(getId()).append(getCode()).append(getDescription()).toString();
-	}
-
-	@Override
-	public Byte getId() {
-		return id;
-	}
-
-	@Override
-	public void setId(Byte id) {
-		this.id = id;
 	}
 
 	public String getCode() {

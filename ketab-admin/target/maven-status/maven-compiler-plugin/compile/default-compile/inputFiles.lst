@@ -8,7 +8,9 @@
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/ThemeDto.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/DomainEntity.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/NotificationChannelDto.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/AbstractDomainModel.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/support/modelmapper/NotificationChannelMapper.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/OrganizationUnit.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/DomainModel.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/controller/ConfidentialityDegreeController.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/NotificationChannel.java
@@ -16,6 +18,7 @@
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/LookupEntity.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/support/modelmapper/AbstractModelMapper.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/repository/ThemeRepository.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/AbstractUserModel.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/UserModel.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/config/WebMvcConfigurer.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/ConfidentialityDegree.java

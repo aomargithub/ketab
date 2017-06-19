@@ -1,6 +1,7 @@
 org/firstpartysystems/ketab/support/modelmapper/AbstractModelMapper.class
 org/firstpartysystems/ketab/domain/CreateUpdateLog.class
 org/firstpartysystems/ketab/config/WebMvcConfigurer.class
+org/firstpartysystems/ketab/domain/AbstractDomainModel.class
 org/firstpartysystems/ketab/repository/ThemeRepository.class
 org/firstpartysystems/ketab/domain/LookupEntity.class
 org/firstpartysystems/ketab/support/modelmapper/NotificationChannelMapper.class
@@ -15,6 +16,8 @@ org/firstpartysystems/ketab/exception/KetabException.class
 org/firstpartysystems/ketab/config/ApplicationConfig.class
 org/firstpartysystems/ketab/rest/dto/UserModel.class
 org/firstpartysystems/ketab/rest/dto/NotificationChannelDto.class
+org/firstpartysystems/ketab/domain/OrganizationUnit.class
+org/firstpartysystems/ketab/rest/dto/AbstractUserModel.class
 org/firstpartysystems/ketab/domain/DomainModel.class
 org/firstpartysystems/ketab/service/impl/ConfidentialityDegreeServiceImpl.class
 org/firstpartysystems/ketab/domain/DomainEntity.class

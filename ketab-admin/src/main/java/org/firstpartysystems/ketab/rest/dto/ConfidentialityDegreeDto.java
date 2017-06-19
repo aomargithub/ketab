@@ -4,14 +4,13 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-public class ConfidentialityDegreeDto implements UserModel<Byte>{
+public class ConfidentialityDegreeDto extends AbstractUserModel<Byte>{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -5881191981188613950L;
 	
-	private Byte id;
 	private String code;
 	private String description;
 	private Byte precedence;
@@ -37,16 +36,6 @@ public class ConfidentialityDegreeDto implements UserModel<Byte>{
 	
 	public String toString(){
 		return new ToStringBuilder(this).append(getId()).append(getCode()).append(getDescription()).toString();
-	}
-
-	@Override
-	public Byte getId() {
-		return id;
-	}
-
-	@Override
-	public void setId(Byte id) {
-		this.id = id;
 	}
 
 	public String getDescription() {

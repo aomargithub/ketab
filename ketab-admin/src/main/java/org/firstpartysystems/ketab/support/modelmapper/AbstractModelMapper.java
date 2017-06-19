@@ -11,11 +11,11 @@ import javax.persistence.PersistenceUnit;
 import javax.persistence.PersistenceUnitUtil;
 
 import org.apache.log4j.Logger;
-import org.firstpartysystems.ketab.domain.DomainModel;
-import org.firstpartysystems.ketab.rest.dto.UserModel;
+import org.firstpartysystems.ketab.domain.AbstractDomainModel;
+import org.firstpartysystems.ketab.rest.dto.AbstractUserModel;
 import org.hibernate.proxy.HibernateProxy;
 
-public abstract class AbstractModelMapper<E extends DomainModel<?>, D extends UserModel<?>> implements ModelMapper<E, D>{
+public abstract class AbstractModelMapper<E extends AbstractDomainModel<?>, D extends AbstractUserModel<?>> implements ModelMapper<E, D>{
 
 	/**
 	 * 
