@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="ketab-web">
+    <wb-module deploy-name="ketab-admin">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-        <property name="context-root" value="ketab-web"/>
-        <property name="java-output-path" value="/ketab-web/target/classes"/>
+        <property name="java-output-path" value="/ketab-admin/target/classes"/>
+        <property name="context-root" value="ketab-admin"/>
     </wb-module>
 </project-modules>
