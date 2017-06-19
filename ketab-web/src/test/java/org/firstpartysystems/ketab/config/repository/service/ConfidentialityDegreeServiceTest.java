@@ -11,13 +11,15 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
+@ContextConfiguration(locations = { "classpath*:applicationContext.xml" })
 @ActiveProfiles("test")
 public class ConfidentialityDegreeServiceTest {
 	
-	private final static byte NumberOfBuiltInDegrees = 8;
+	private final static byte numberOfBuiltInDegrees = 8;
 	
 	@Autowired
     private ConfidentialityDegreeService confidentialityDegreeService;
@@ -29,6 +31,6 @@ public class ConfidentialityDegreeServiceTest {
 		
         List<ConfidentialityDegreeDto> confidentialityDegreeDtos = this.confidentialityDegreeService.getAllActive();
         
-        assertThat(confidentialityDegreeDtos.size()).isEqualTo(NumberOfBuiltInDegrees);
+        assertThat(confidentialityDegreeDtos.size()).isEqualTo(numberOfBuiltInDegrees);
     }
 }

@@ -17,9 +17,11 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableJpaRepositories(basePackages = {"org.firstpartysystems.ketab.domain"})
+@EnableJpaRepositories(basePackages = {"org.firstpartysystems.ketab.repository"})
 @EnableTransactionManagement
 public class PersistenceContext {
+	
+	private static final String[] ENTITY_PACKAGES = { "org.firstpartysystems.ketab.domain" };
 
 	@Bean
 	@Profile("!test")
@@ -36,7 +38,7 @@ public class PersistenceContext {
 		LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
 		entityManagerFactoryBean.setDataSource(dataSource);
 		entityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
-		
+		entityManagerFactoryBean.setPackagesToScan(ENTITY_PACKAGES);
 		entityManagerFactoryBean
 				.setPersistenceUnitName(environment.getRequiredProperty("persistence.unit.ketab.name"));
 

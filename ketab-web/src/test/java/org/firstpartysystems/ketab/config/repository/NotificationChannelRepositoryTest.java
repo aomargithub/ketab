@@ -11,13 +11,15 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
+@ContextConfiguration(locations = { "classpath*:applicationContext.xml" })
 @ActiveProfiles("test")
 public class NotificationChannelRepositoryTest {
 
-	private final static byte NumberOfBuiltInChannels = 4;
+	private final static byte numberOfBuiltInChannels = 4;
 	
 	
 	@Autowired
@@ -34,7 +36,7 @@ public class NotificationChannelRepositoryTest {
 		
         List<NotificationChannel> notificationChannels = this.repository.findByIsActive(true);
         
-        assertThat(notificationChannels.size()).isEqualTo(NumberOfBuiltInChannels);
+        assertThat(notificationChannels.size()).isEqualTo(numberOfBuiltInChannels);
     }
 	
 	@Test
