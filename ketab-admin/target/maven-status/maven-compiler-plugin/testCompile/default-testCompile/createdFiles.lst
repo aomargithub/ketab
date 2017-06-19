@@ -1,0 +1,6 @@
+org/firstpartysystems/ketab/config/repository/ConfidentialityDegreeRepositoryTest.class
+org/firstpartysystems/ketab/config/TestApplicationConfig.class
+org/firstpartysystems/ketab/config/repository/ThemeRepositoryTest.class
+org/firstpartysystems/ketab/config/repository/service/ConfidentialityDegreeServiceTest.class
+org/firstpartysystems/ketab/config/TestPersistenceContext.class
+org/firstpartysystems/ketab/config/repository/NotificationChannelRepositoryTest.class
