@@ -1,8 +1,10 @@
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/response/RestResponse.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/Theme.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/support/modelmapper/ThemeMapper.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/support/ConfidentialityDegreeDtoBuilder.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/exception/KetabException.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/repository/ConfidentialityDegreeRepository.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/support/OrganizationUnitBuilder.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/service/ConfidentialityDegreeService.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/support/modelmapper/ModelMapper.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/ThemeDto.java
@@ -22,10 +24,13 @@
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/UserModel.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/config/WebMvcConfigurer.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/ConfidentialityDegree.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/support/UserModelBuilder.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/support/modelmapper/ConfidentialityDegreeMapper.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/service/impl/ConfidentialityDegreeServiceImpl.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/config/ApplicationConfig.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/config/PersistenceContext.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/exception/KetabInternalException.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/ConfidentialityDegreeDto.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/support/ConfidentialityDegreeBuilder.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/support/DomainEntityBuilder.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/CreateUpdateLog.java

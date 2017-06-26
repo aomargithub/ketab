@@ -16,7 +16,7 @@ public abstract class LookupEntity<T extends Serializable> extends DomainEntity<
 	@Column(name = "is_active")
 	private Boolean isActive;
 	
-	@Column(name = "code")
+	@Column(name = "code", updatable = false)
 	private String code;
 	
 	public Boolean getIsActive() {

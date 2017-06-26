@@ -48,6 +48,5 @@ public class ConfidentialityDegreeRepositoryTest {
         List<ConfidentialityDegree> confidentialityDegrees = this.repository.findByIsActive(false);
         
         assertThat(confidentialityDegrees.size()).isEqualTo(1);
-    }
-	
+	}	
 }
