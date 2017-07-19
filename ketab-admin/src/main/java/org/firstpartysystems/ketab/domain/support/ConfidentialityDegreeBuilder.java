@@ -4,7 +4,12 @@ import java.util.Date;
 
 import org.firstpartysystems.ketab.domain.ConfidentialityDegree;
 
-public class ConfidentialityDegreeBuilder extends DomainEntityBuilder<ConfidentialityDegree, Byte>{
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
+public class ConfidentialityDegreeBuilder extends LookupEntityBuilder<ConfidentialityDegree, Byte>{
 
 	/**
 	 * 
@@ -13,7 +18,7 @@ public class ConfidentialityDegreeBuilder extends DomainEntityBuilder<Confidenti
 	
 	public ConfidentialityDegreeBuilder(String code, String createBy, Date createDate){
 		entity = new ConfidentialityDegree();
-		entity.setCode(code);
+		code(code);
 		this.createBy = createBy;
 		this.createDate = createDate;
 	}

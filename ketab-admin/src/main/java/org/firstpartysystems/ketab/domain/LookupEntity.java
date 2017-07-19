@@ -6,7 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public abstract class LookupEntity<T extends Serializable> extends DomainEntity<T>{
+public abstract class LookupEntity<T extends Serializable> extends AbstractDomainModel<T>{
 
 	/**
 	 * 

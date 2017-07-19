@@ -3,10 +3,16 @@ package org.firstpartysystems.ketab.domain.support;
 import java.io.Serializable;
 import java.util.Date;
 
+import org.firstpartysystems.ketab.domain.AbstractDomainModel;
 import org.firstpartysystems.ketab.domain.CreateUpdateLog;
-import org.firstpartysystems.ketab.domain.DomainEntity;
 
-public class DomainEntityBuilder<D extends DomainEntity<T>, T extends Serializable>  implements Serializable{
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
+
+public class DomainModelBuilder<D extends AbstractDomainModel<T>, T extends Serializable>  implements Serializable{
 	/**
 	 * 
 	 */
@@ -21,7 +27,7 @@ public class DomainEntityBuilder<D extends DomainEntity<T>, T extends Serializab
 		return entity;
 	}
 	
-	public DomainEntityBuilder<D, T> id(T id){
+	public DomainModelBuilder<D, T> id(T id){
 		entity.setId(id);
 		return this;
 	}

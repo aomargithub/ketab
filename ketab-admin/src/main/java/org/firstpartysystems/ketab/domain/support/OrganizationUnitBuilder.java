@@ -4,7 +4,13 @@ import java.util.Date;
 
 import org.firstpartysystems.ketab.domain.OrganizationUnit;
 
-public class OrganizationUnitBuilder extends DomainEntityBuilder<OrganizationUnit, Long>{
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
+
+public class OrganizationUnitBuilder extends LookupEntityBuilder<OrganizationUnit, Long>{
 	
 	
 	
@@ -15,7 +21,7 @@ public class OrganizationUnitBuilder extends DomainEntityBuilder<OrganizationUni
 
 	public OrganizationUnitBuilder(String code, String createBy, Date createDate){
 		entity = new OrganizationUnit();
-		entity.setCode(code);
+		code(code);
 		this.createBy = createBy;
 		this.createDate = createDate;
 		
