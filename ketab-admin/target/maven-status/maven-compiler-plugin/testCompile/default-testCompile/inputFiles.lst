@@ -1,6 +1,7 @@
 /home/aomar/appsData/git/ketab/ketab-admin/src/test/java/org/firstpartysystems/ketab/config/repository/service/ConfidentialityDegreeServiceTest.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/test/java/org/firstpartysystems/ketab/config/repository/service/NotificationChannelServiceIT.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/test/java/org/firstpartysystems/ketab/config/repository/service/NotificationChannelServiceTest.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/test/java/org/firstpartysystems/ketab/support/modelmapper/NotificationChannelMapperTest.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/test/java/org/firstpartysystems/ketab/config/repository/service/ConfidentialityDegreeServiceIT.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/test/java/org/firstpartysystems/ketab/test/IntegrationTest.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/test/java/org/firstpartysystems/ketab/support/modelmapper/ConfidentialityDegreeMapperTest.java

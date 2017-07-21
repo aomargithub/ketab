@@ -1,5 +1,6 @@
 org/firstpartysystems/ketab/support/modelmapper/ConfidentialityDegreeMapperTest.class
 org/firstpartysystems/ketab/config/repository/service/NotificationChannelServiceIT.class
+org/firstpartysystems/ketab/support/modelmapper/NotificationChannelMapperTest.class
 org/firstpartysystems/ketab/config/repository/service/ConfidentialityDegreeServiceIT.class
 org/firstpartysystems/ketab/config/repository/NotificationChannelRepositoryTest.class
 org/firstpartysystems/ketab/config/repository/ConfidentialityDegreeRepositoryTest.class
