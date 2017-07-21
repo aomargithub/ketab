@@ -1,12 +1,12 @@
 package org.firstpartysystems.ketab.config.repository.service;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.List;
 
 import org.firstpartysystems.ketab.exception.KetabException;
-import org.firstpartysystems.ketab.rest.dto.ConfidentialityDegreeDto;
-import org.firstpartysystems.ketab.service.ConfidentialityDegreeService;
+import org.firstpartysystems.ketab.rest.dto.NotificationChannelDto;
+import org.firstpartysystems.ketab.service.NotificationChannelService;
 import org.firstpartysystems.ketab.test.IntegrationTest;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
@@ -27,21 +27,17 @@ import org.springframework.test.context.web.WebAppConfiguration;
 @WebAppConfiguration
 @ActiveProfiles("test")
 @Category(IntegrationTest.class)
-public class ConfidentialityDegreeServiceIT {
+public class NotificationChannelServiceIT {
 	
-	private final static byte numberOfTestDegrees = 8;
+	private final static byte numberOfTestChannels = 4;
 	
 	@Autowired
-    private ConfidentialityDegreeService confidentialityDegreeService;	
-	
+	private NotificationChannelService notificationChannelService;
 	
 	@Test
     public void getAllActive_success() throws KetabException {
-		
-		
-        List<ConfidentialityDegreeDto> confidentialityDegreeDtos = this.confidentialityDegreeService.getAllActive();
-        
-        assertThat(confidentialityDegreeDtos.size()).isEqualTo(numberOfTestDegrees);
-    }
+		List<NotificationChannelDto> notificationChannelDtos = notificationChannelService.getAllActive();
+		assertThat(notificationChannelDtos.size()).isEqualTo(numberOfTestChannels);
+	}
 	
 }

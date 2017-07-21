@@ -15,22 +15,22 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 @RunWith(SpringRunner.class)
 @ContextConfiguration(locations = { "classpath*:applicationContext.xml" })
 @WebAppConfiguration
 @ActiveProfiles("test")
 public class ConfidentialityDegreeRepositoryTest {
 	
-	private final static byte numberOfBuiltInDegrees = 8;
+	private final static byte numberOfTestDegrees = 8;
 	
 	
 	@Autowired
     private ConfidentialityDegreeRepository repository;
-	
-	@Before
-	public void setup(){
-		
-	}
 	
 	@Test
     public void findByIsActive_true_success() {
@@ -38,7 +38,7 @@ public class ConfidentialityDegreeRepositoryTest {
 		
         List<ConfidentialityDegree> confidentialityDegrees = this.repository.findByIsActive(true);
         
-        assertThat(confidentialityDegrees.size()).isEqualTo(numberOfBuiltInDegrees);
+        assertThat(confidentialityDegrees.size()).isEqualTo(numberOfTestDegrees);
     }
 	
 	@Test

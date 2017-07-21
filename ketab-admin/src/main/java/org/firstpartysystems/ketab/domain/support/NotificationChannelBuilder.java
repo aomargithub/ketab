@@ -9,7 +9,7 @@ import org.firstpartysystems.ketab.domain.NotificationChannel;
  * @author Ahmad Omar
  *
  */
-public class NotificationChannelBuilder extends LookupEntityBuilder<NotificationChannel, Byte>{
+public class NotificationChannelBuilder extends LookupEntityBuilder<NotificationChannelBuilder, NotificationChannel, Byte>{
 
 	/**
 	 * 

@@ -4,6 +4,11 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 public class ConfidentialityDegreeDto extends LookupDto<Byte>{
 
 	/**

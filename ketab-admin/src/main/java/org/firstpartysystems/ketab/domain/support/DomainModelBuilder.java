@@ -12,7 +12,7 @@ import org.firstpartysystems.ketab.domain.CreateUpdateLog;
  *
  */
 
-public class DomainModelBuilder<D extends AbstractDomainModel<T>, T extends Serializable>  implements Serializable{
+public class DomainModelBuilder<E extends DomainModelBuilder<E, D, T>, D extends AbstractDomainModel<T>, T extends Serializable>  implements Serializable{
 	/**
 	 * 
 	 */
@@ -27,8 +27,9 @@ public class DomainModelBuilder<D extends AbstractDomainModel<T>, T extends Seri
 		return entity;
 	}
 	
-	public DomainModelBuilder<D, T> id(T id){
+	@SuppressWarnings("unchecked")
+	public E id(T id){
 		entity.setId(id);
-		return this;
+		return (E) this;
 	}
 }

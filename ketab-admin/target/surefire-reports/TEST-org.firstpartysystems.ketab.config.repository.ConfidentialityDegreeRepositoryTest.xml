@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest" time="0.226" tests="2" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest" time="0.082" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/aomar/workspace/eclipse/jee-neon/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf477202134146717998.tmp"/>
+    <property name="classworlds.conf" value="/home/aomar/workspace/eclipse/jee-neon/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf290610998547124602.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -59,103 +59,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="findByIsActive_true_success" classname="org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest" time="0.187">
-    <failure message="expected:&lt;[8]&gt; but was:&lt;[7]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[8]> but was:<[7]>
-	at org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest.findByIsActive_true_success(ConfidentialityDegreeRepositoryTest.java:41)
-]]></failure>
-    <system-out><![CDATA[2017-07-19 01:59:09 DEBUG CriteriaQueryImpl:307 - Rendered criteria query -> select generatedAlias0 from ConfidentialityDegree as generatedAlias0 where generatedAlias0.isActive=:param0
-2017-07-19 01:59:09 DEBUG QueryTranslatorImpl:282 - parse() - HQL: select generatedAlias0 from org.firstpartysystems.ketab.domain.ConfidentialityDegree as generatedAlias0 where generatedAlias0.isActive=:param0
-2017-07-19 01:59:09 DEBUG QueryTranslatorImpl:300 - --- HQL AST ---
- \-[QUERY] Node: 'query'
-    +-[SELECT_FROM] Node: 'SELECT_FROM'
-    |  +-[FROM] Node: 'from'
-    |  |  \-[RANGE] Node: 'RANGE'
-    |  |     +-[DOT] Node: '.'
-    |  |     |  +-[DOT] Node: '.'
-    |  |     |  |  +-[DOT] Node: '.'
-    |  |     |  |  |  +-[DOT] Node: '.'
-    |  |     |  |  |  |  +-[IDENT] Node: 'org'
-    |  |     |  |  |  |  \-[IDENT] Node: 'firstpartysystems'
-    |  |     |  |  |  \-[IDENT] Node: 'ketab'
-    |  |     |  |  \-[IDENT] Node: 'domain'
-    |  |     |  \-[IDENT] Node: 'ConfidentialityDegree'
-    |  |     \-[ALIAS] Node: 'generatedAlias0'
-    |  \-[SELECT] Node: 'select'
-    |     \-[IDENT] Node: 'generatedAlias0'
-    \-[WHERE] Node: 'where'
-       \-[EQ] Node: '='
-          +-[DOT] Node: '.'
-          |  +-[IDENT] Node: 'generatedAlias0'
-          |  \-[IDENT] Node: 'isActive'
-          \-[COLON] Node: ':'
-             \-[IDENT] Node: 'param0'
-
-2017-07-19 01:59:09 DEBUG ErrorCounter:95 - throwQueryException() : no errors
-2017-07-19 01:59:09 DEBUG HqlSqlBaseWalker:124 - select << begin [level=1, statement=select]
-2017-07-19 01:59:09 DEBUG FromElement:147 - FromClause{level=1} : org.firstpartysystems.ketab.domain.ConfidentialityDegree (generatedAlias0) -> confidenti0_
-2017-07-19 01:59:09 DEBUG FromReferenceNode:60 - Resolved : generatedAlias0 -> confidenti0_.id
-2017-07-19 01:59:09 DEBUG FromReferenceNode:60 - Resolved : generatedAlias0 -> confidenti0_.id
-2017-07-19 01:59:09 DEBUG DotNode:666 - getDataType() : isActive -> org.hibernate.type.BooleanType@362a019c
-2017-07-19 01:59:09 DEBUG FromReferenceNode:60 - Resolved : generatedAlias0.isActive -> confidenti0_.is_active
-2017-07-19 01:59:09 DEBUG HqlSqlBaseWalker:128 - select : finishing up [level=1, statement=select]
-2017-07-19 01:59:09 DEBUG HqlSqlWalker:745 - processQuery() :  ( SELECT ( {select clause} confidenti0_.id ) ( FromClause{level=1} confidentiality_degree confidenti0_ ) ( where ( = ( confidenti0_.is_active confidenti0_.id isActive ) ? ) ) )
-2017-07-19 01:59:09 DEBUG JoinProcessor:187 - Using FROM fragment [confidentiality_degree confidenti0_]
-2017-07-19 01:59:09 DEBUG HqlSqlBaseWalker:132 - select >> end [level=1, statement=select]
-2017-07-19 01:59:09 DEBUG QueryTranslatorImpl:269 - --- SQL AST ---
- \-[SELECT] QueryNode: 'SELECT'  querySpaces (confidentiality_degree)
-    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
-    |  +-[ALIAS_REF] IdentNode: 'confidenti0_.id as id1_0_' {alias=generatedAlias0, className=org.firstpartysystems.ketab.domain.ConfidentialityDegree, tableAlias=confidenti0_}
-    |  \-[SQL_TOKEN] SqlFragment: 'confidenti0_.create_by as create_b2_0_, confidenti0_.create_date as create_d3_0_, confidenti0_.update_by as update_b4_0_, confidenti0_.update_date as update_d5_0_, confidenti0_.orm_version as orm_vers6_0_, confidenti0_.code as code7_0_, confidenti0_.is_active as is_activ8_0_, confidenti0_.description as descript9_0_, confidenti0_.precedence as precede10_0_'
-    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[confidenti0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
-    |  \-[FROM_FRAGMENT] FromElement: 'confidentiality_degree confidenti0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=confidentiality_degree,tableAlias=confidenti0_,origin=null,columns={,className=org.firstpartysystems.ketab.domain.ConfidentialityDegree}}
-    \-[WHERE] SqlNode: 'where'
-       \-[EQ] BinaryLogicOperatorNode: '='
-          +-[DOT] DotNode: 'confidenti0_.is_active' {propertyName=isActive,dereferenceType=PRIMITIVE,getPropertyPath=isActive,path=generatedAlias0.isActive,tableAlias=confidenti0_,className=org.firstpartysystems.ketab.domain.ConfidentialityDegree,classAlias=generatedAlias0}
-          |  +-[ALIAS_REF] IdentNode: 'confidenti0_.id' {alias=generatedAlias0, className=org.firstpartysystems.ketab.domain.ConfidentialityDegree, tableAlias=confidenti0_}
-          |  \-[IDENT] IdentNode: 'isActive' {originalText=isActive}
-          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.BooleanType@362a019c}
-
-2017-07-19 01:59:09 DEBUG ErrorCounter:95 - throwQueryException() : no errors
-2017-07-19 01:59:09 DEBUG QueryTranslatorImpl:251 - HQL: select generatedAlias0 from org.firstpartysystems.ketab.domain.ConfidentialityDegree as generatedAlias0 where generatedAlias0.isActive=:param0
-2017-07-19 01:59:09 DEBUG QueryTranslatorImpl:252 - SQL: select confidenti0_.id as id1_0_, confidenti0_.create_by as create_b2_0_, confidenti0_.create_date as create_d3_0_, confidenti0_.update_by as update_b4_0_, confidenti0_.update_date as update_d5_0_, confidenti0_.orm_version as orm_vers6_0_, confidenti0_.code as code7_0_, confidenti0_.is_active as is_activ8_0_, confidenti0_.description as descript9_0_, confidenti0_.precedence as precede10_0_ from confidentiality_degree confidenti0_ where confidenti0_.is_active=?
-2017-07-19 01:59:09 DEBUG ErrorCounter:95 - throwQueryException() : no errors
-2017-07-19 01:59:09 DEBUG SQL:92 - select confidenti0_.id as id1_0_, confidenti0_.create_by as create_b2_0_, confidenti0_.create_date as create_d3_0_, confidenti0_.update_by as update_b4_0_, confidenti0_.update_date as update_d5_0_, confidenti0_.orm_version as orm_vers6_0_, confidenti0_.code as code7_0_, confidenti0_.is_active as is_activ8_0_, confidenti0_.description as descript9_0_, confidenti0_.precedence as precede10_0_ from confidentiality_degree confidenti0_ where confidenti0_.is_active=?
-2017-07-19 01:59:09 DEBUG Loader:384 - Result set row: 0
-2017-07-19 01:59:09 DEBUG Loader:1527 - Result row: EntityKey[org.firstpartysystems.ketab.domain.ConfidentialityDegree#1]
-2017-07-19 01:59:09 DEBUG Loader:384 - Result set row: 1
-2017-07-19 01:59:09 DEBUG Loader:1527 - Result row: EntityKey[org.firstpartysystems.ketab.domain.ConfidentialityDegree#2]
-2017-07-19 01:59:09 DEBUG Loader:384 - Result set row: 2
-2017-07-19 01:59:09 DEBUG Loader:1527 - Result row: EntityKey[org.firstpartysystems.ketab.domain.ConfidentialityDegree#3]
-2017-07-19 01:59:09 DEBUG Loader:384 - Result set row: 3
-2017-07-19 01:59:09 DEBUG Loader:1527 - Result row: EntityKey[org.firstpartysystems.ketab.domain.ConfidentialityDegree#4]
-2017-07-19 01:59:09 DEBUG Loader:384 - Result set row: 4
-2017-07-19 01:59:09 DEBUG Loader:1527 - Result row: EntityKey[org.firstpartysystems.ketab.domain.ConfidentialityDegree#5]
-2017-07-19 01:59:09 DEBUG Loader:384 - Result set row: 5
-2017-07-19 01:59:09 DEBUG Loader:1527 - Result row: EntityKey[org.firstpartysystems.ketab.domain.ConfidentialityDegree#6]
-2017-07-19 01:59:09 DEBUG Loader:384 - Result set row: 6
-2017-07-19 01:59:09 DEBUG Loader:1527 - Result row: EntityKey[org.firstpartysystems.ketab.domain.ConfidentialityDegree#7]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:141 - Resolving associations for [org.firstpartysystems.ketab.domain.ConfidentialityDegree#1]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:281 - Done materializing entity [org.firstpartysystems.ketab.domain.ConfidentialityDegree#1]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:141 - Resolving associations for [org.firstpartysystems.ketab.domain.ConfidentialityDegree#2]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:281 - Done materializing entity [org.firstpartysystems.ketab.domain.ConfidentialityDegree#2]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:141 - Resolving associations for [org.firstpartysystems.ketab.domain.ConfidentialityDegree#3]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:281 - Done materializing entity [org.firstpartysystems.ketab.domain.ConfidentialityDegree#3]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:141 - Resolving associations for [org.firstpartysystems.ketab.domain.ConfidentialityDegree#4]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:281 - Done materializing entity [org.firstpartysystems.ketab.domain.ConfidentialityDegree#4]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:141 - Resolving associations for [org.firstpartysystems.ketab.domain.ConfidentialityDegree#5]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:281 - Done materializing entity [org.firstpartysystems.ketab.domain.ConfidentialityDegree#5]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:141 - Resolving associations for [org.firstpartysystems.ketab.domain.ConfidentialityDegree#6]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:281 - Done materializing entity [org.firstpartysystems.ketab.domain.ConfidentialityDegree#6]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:141 - Resolving associations for [org.firstpartysystems.ketab.domain.ConfidentialityDegree#7]
-2017-07-19 01:59:09 DEBUG TwoPhaseLoad:281 - Done materializing entity [org.firstpartysystems.ketab.domain.ConfidentialityDegree#7]
-]]></system-out>
-  </testcase>
-  <testcase name="findByIsActive_false_success" classname="org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest" time="0.019">
-    <failure message="expected:&lt;[1]&gt; but was:&lt;[0]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[1]> but was:<[0]>
-	at org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest.findByIsActive_false_success(ConfidentialityDegreeRepositoryTest.java:50)
-]]></failure>
-    <system-out><![CDATA[2017-07-19 01:59:09 DEBUG CriteriaQueryImpl:307 - Rendered criteria query -> select generatedAlias0 from ConfidentialityDegree as generatedAlias0 where generatedAlias0.isActive=:param0
-2017-07-19 01:59:09 DEBUG SQL:92 - select confidenti0_.id as id1_0_, confidenti0_.create_by as create_b2_0_, confidenti0_.create_date as create_d3_0_, confidenti0_.update_by as update_b4_0_, confidenti0_.update_date as update_d5_0_, confidenti0_.orm_version as orm_vers6_0_, confidenti0_.code as code7_0_, confidenti0_.is_active as is_activ8_0_, confidenti0_.description as descript9_0_, confidenti0_.precedence as precede10_0_ from confidentiality_degree confidenti0_ where confidenti0_.is_active=?
-]]></system-out>
-  </testcase>
+  <testcase name="findByIsActive_true_success" classname="org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest" time="0.037"/>
+  <testcase name="findByIsActive_false_success" classname="org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest" time="0.019"/>
 </testsuite>

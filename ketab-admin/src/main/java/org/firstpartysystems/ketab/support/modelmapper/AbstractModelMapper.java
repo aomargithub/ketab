@@ -15,6 +15,11 @@ import org.firstpartysystems.ketab.domain.AbstractDomainModel;
 import org.firstpartysystems.ketab.rest.dto.AbstractUserModel;
 import org.hibernate.proxy.HibernateProxy;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 public abstract class AbstractModelMapper<E extends AbstractDomainModel<?>, D extends AbstractUserModel<?>> implements ModelMapper<E, D>{
 
 	/**

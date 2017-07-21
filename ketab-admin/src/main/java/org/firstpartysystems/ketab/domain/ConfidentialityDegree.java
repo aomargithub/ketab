@@ -8,6 +8,11 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 @Entity
 @Table(name = "confidentiality_degree")
 public class ConfidentialityDegree extends LookupEntity<Byte>{
@@ -25,6 +30,10 @@ public class ConfidentialityDegree extends LookupEntity<Byte>{
 	private Byte precedence;
 	
 	public boolean equals(Object object){
+		
+		if(object == this){
+			return true;
+		}
 		
 		if(object == null){
 			return false;

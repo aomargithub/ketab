@@ -2,6 +2,11 @@ package org.firstpartysystems.ketab.rest.dto;
 
 import java.io.Serializable;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 public class LookupDto<T extends Serializable> extends AbstractUserModel<T>{
 
 	/**

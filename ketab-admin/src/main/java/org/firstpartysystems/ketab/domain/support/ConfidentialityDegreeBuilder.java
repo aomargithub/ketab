@@ -9,7 +9,7 @@ import org.firstpartysystems.ketab.domain.ConfidentialityDegree;
  * @author Ahmad Omar
  *
  */
-public class ConfidentialityDegreeBuilder extends LookupEntityBuilder<ConfidentialityDegree, Byte>{
+public class ConfidentialityDegreeBuilder extends LookupEntityBuilder<ConfidentialityDegreeBuilder, ConfidentialityDegree, Byte>{
 
 	/**
 	 * 

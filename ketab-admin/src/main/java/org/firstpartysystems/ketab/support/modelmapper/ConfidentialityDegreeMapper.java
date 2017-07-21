@@ -5,6 +5,11 @@ import org.firstpartysystems.ketab.domain.ConfidentialityDegree;
 import org.firstpartysystems.ketab.rest.dto.ConfidentialityDegreeDto;
 import org.springframework.stereotype.Component;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 @Component
 public class ConfidentialityDegreeMapper extends AbstractModelMapper<ConfidentialityDegree, ConfidentialityDegreeDto>{
 

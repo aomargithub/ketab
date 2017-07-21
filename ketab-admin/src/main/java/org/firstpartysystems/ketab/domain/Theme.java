@@ -22,6 +22,10 @@ public class Theme extends LookupEntity<Byte>{
 	
 	public boolean equals(Object object){
 		
+		if(object == this){
+			return true;
+		}
+		
 		if(object == null){
 			return false;
 		}

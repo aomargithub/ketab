@@ -2,7 +2,12 @@ package org.firstpartysystems.ketab.rest.dto.support;
 
 import org.firstpartysystems.ketab.rest.dto.ConfidentialityDegreeDto;
 
-public class ConfidentialityDegreeDtoBuilder extends UserModelBuilder<ConfidentialityDegreeDto, Byte> {
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
+public class ConfidentialityDegreeDtoBuilder extends LookupDtoBuilder<ConfidentialityDegreeDtoBuilder, ConfidentialityDegreeDto, Byte> {
 
 	/**
 	 * 
@@ -12,7 +17,7 @@ public class ConfidentialityDegreeDtoBuilder extends UserModelBuilder<Confidenti
 	
 	public ConfidentialityDegreeDtoBuilder(String code){
 		entity = new ConfidentialityDegreeDto();
-		entity.setCode(code);
+		code(code);
 	}
 	
 	public ConfidentialityDegreeDtoBuilder description(String description){

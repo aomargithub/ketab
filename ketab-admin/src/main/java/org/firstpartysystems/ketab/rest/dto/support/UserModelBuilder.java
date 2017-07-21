@@ -4,7 +4,12 @@ import java.io.Serializable;
 
 import org.firstpartysystems.ketab.rest.dto.UserModel;
 
-public class UserModelBuilder<D extends UserModel<T>, T extends Serializable>  implements Serializable{
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
+public class UserModelBuilder<E extends UserModelBuilder<E, D, T>, D extends UserModel<T>, T extends Serializable>  implements Serializable{
 
 	/**
 	 * 
@@ -17,8 +22,9 @@ public class UserModelBuilder<D extends UserModel<T>, T extends Serializable>  i
 		return entity;
 	}
 	
-	public UserModelBuilder<D, T> id(T id){
+	@SuppressWarnings("unchecked")
+	public E id(T id){
 		entity.setId(id);
-		return this;
+		return (E) this;
 	}
 }

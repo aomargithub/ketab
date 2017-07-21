@@ -14,13 +14,18 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 @RunWith(SpringRunner.class)
 @ContextConfiguration(locations = { "classpath*:applicationContext.xml" })
 @WebAppConfiguration
 @ActiveProfiles("test")
 public class ThemeRepositoryTest {
 
-	private final static byte numberOfBuiltInThemes = 3;
+	private final static byte numberOfTestThemes = 3;
 	
 	@Autowired
     private ThemeRepository repository;
@@ -31,7 +36,7 @@ public class ThemeRepositoryTest {
 		
         List<Theme> themes = this.repository.findByIsActive(true);
         
-        assertThat(themes.size()).isEqualTo(numberOfBuiltInThemes);
+        assertThat(themes.size()).isEqualTo(numberOfTestThemes);
     }
 	
 	@Test

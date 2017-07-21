@@ -1,4 +1,8 @@
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/response/RestResponse.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/support/LookupDtoBuilder.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/support/NotificationChannelBuilder.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/LookupDto.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/service/impl/NotificationChannelServiceImpl.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/Theme.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/support/modelmapper/ThemeMapper.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/support/ConfidentialityDegreeDtoBuilder.java
@@ -8,8 +12,9 @@
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/service/ConfidentialityDegreeService.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/support/modelmapper/ModelMapper.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/ThemeDto.java
-/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/DomainEntity.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/NotificationChannelDto.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/service/NotificationChannelService.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/support/NotificationChannelDtoBuilder.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/AbstractDomainModel.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/support/modelmapper/NotificationChannelMapper.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/OrganizationUnit.java
@@ -22,6 +27,7 @@
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/repository/ThemeRepository.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/AbstractUserModel.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/UserModel.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/support/LookupEntityBuilder.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/config/WebMvcConfigurer.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/ConfidentialityDegree.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/support/UserModelBuilder.java
@@ -30,7 +36,7 @@
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/config/ApplicationConfig.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/config/PersistenceContext.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/exception/KetabInternalException.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/support/DomainModelBuilder.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/ConfidentialityDegreeDto.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/support/ConfidentialityDegreeBuilder.java
-/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/support/DomainEntityBuilder.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/CreateUpdateLog.java

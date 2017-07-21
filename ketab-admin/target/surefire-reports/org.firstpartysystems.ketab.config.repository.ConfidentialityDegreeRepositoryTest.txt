@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.226 s <<< FAILURE! - in org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest
-findByIsActive_true_success(org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest)  Time elapsed: 0.187 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[8]> but was:<[7]>
-	at org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest.findByIsActive_true_success(ConfidentialityDegreeRepositoryTest.java:41)
-
-findByIsActive_false_success(org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest)  Time elapsed: 0.019 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[1]> but was:<[0]>
-	at org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest.findByIsActive_false_success(ConfidentialityDegreeRepositoryTest.java:50)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in org.firstpartysystems.ketab.config.repository.ConfidentialityDegreeRepositoryTest

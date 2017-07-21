@@ -7,6 +7,15 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+import org.apache.commons.lang.builder.ToStringBuilder;
+
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 @Entity
 @Table(name = "organization_unit")
 public class OrganizationUnit extends LookupEntity<Long>{
@@ -27,6 +36,36 @@ public class OrganizationUnit extends LookupEntity<Long>{
 	
 	@Column(name = "is_sending_correspondences")
 	private Boolean isSendingCorrespodences;
+	
+	@Column(name = "name")
+	private String name;
+	
+	public boolean equals(Object object){
+		
+		if(object == this){
+			return true;
+		}
+		
+		if(object == null){
+			return false;
+		}
+		
+		if(!(object instanceof OrganizationUnit)){
+			return false;
+		}
+		
+		OrganizationUnit other  = (OrganizationUnit) object;
+		
+		return new EqualsBuilder().append(getCode(), other.getCode()).isEquals();
+	}
+	
+	public int hashCode(){
+		return new HashCodeBuilder().append(getCode()).hashCode();
+	}
+	
+	public String toString(){
+		return new ToStringBuilder(this).append(getId()).append(getCode()).append(getName()).toString();
+	}
 
 
 	public OrganizationUnit getParent() {
@@ -56,6 +95,14 @@ public class OrganizationUnit extends LookupEntity<Long>{
 
 	public void setIsSendingCorrespodences(Boolean isSendingCorrespodences) {
 		this.isSendingCorrespodences = isSendingCorrespodences;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 

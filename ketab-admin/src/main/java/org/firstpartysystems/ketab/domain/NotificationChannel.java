@@ -13,7 +13,6 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  * @author Ahmad Omar
  *
  */
-
 @Entity
 @Table(name = "notification_channel")
 public class NotificationChannel extends LookupEntity<Byte>{
@@ -27,6 +26,10 @@ public class NotificationChannel extends LookupEntity<Byte>{
 	private String description;
 	
 	public boolean equals(Object object){
+		
+		if(object == this){
+			return true;
+		}
 		
 		if(object == null){
 			return false;

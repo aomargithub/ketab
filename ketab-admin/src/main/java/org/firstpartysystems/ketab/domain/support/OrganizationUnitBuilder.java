@@ -10,7 +10,7 @@ import org.firstpartysystems.ketab.domain.OrganizationUnit;
  *
  */
 
-public class OrganizationUnitBuilder extends LookupEntityBuilder<OrganizationUnit, Long>{
+public class OrganizationUnitBuilder extends LookupEntityBuilder<OrganizationUnitBuilder, OrganizationUnit, Long>{
 	
 	
 	

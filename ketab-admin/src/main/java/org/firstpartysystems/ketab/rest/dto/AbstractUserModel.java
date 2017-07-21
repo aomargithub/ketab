@@ -2,6 +2,11 @@ package org.firstpartysystems.ketab.rest.dto;
 
 import java.io.Serializable;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 public abstract class AbstractUserModel<T extends Serializable> implements UserModel<T>{
 	/**
 	 * 

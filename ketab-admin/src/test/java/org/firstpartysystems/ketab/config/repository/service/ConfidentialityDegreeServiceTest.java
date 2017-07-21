@@ -1,6 +1,6 @@
 package org.firstpartysystems.ketab.config.repository.service;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -27,6 +27,11 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 @RunWith(SpringRunner.class)
 @ContextConfiguration(locations = { "classpath*:applicationContext.xml" })
 @WebAppConfiguration
@@ -49,7 +54,7 @@ public class ConfidentialityDegreeServiceTest {
 	@Before
 	public void setup(){
 		
-		 MockitoAnnotations.initMocks(this);
+		MockitoAnnotations.initMocks(this);
 		
 		ConfidentialityDegree confidentialityDegree1 = new ConfidentialityDegreeBuilder("SEC", "Test", new Date()).build();
 		ConfidentialityDegree confidentialityDegree2 = new ConfidentialityDegreeBuilder("TSEC", "Test", new Date()).build();

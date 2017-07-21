@@ -5,6 +5,11 @@ import org.firstpartysystems.ketab.domain.NotificationChannel;
 import org.firstpartysystems.ketab.rest.dto.NotificationChannelDto;
 import org.springframework.stereotype.Component;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 @Component
 public class NotificationChannelMapper extends AbstractModelMapper<NotificationChannel, NotificationChannelDto>{
 
