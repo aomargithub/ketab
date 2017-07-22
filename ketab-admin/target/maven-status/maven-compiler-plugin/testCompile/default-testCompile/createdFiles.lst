@@ -10,3 +10,4 @@ org/firstpartysystems/ketab/config/repository/ThemeRepositoryTest.class
 org/firstpartysystems/ketab/config/repository/service/ConfidentialityDegreeServiceTest.class
 org/firstpartysystems/ketab/config/TestPersistenceContext.class
 org/firstpartysystems/ketab/config/repository/service/NotificationChannelServiceTest.class
+org/firstpartysystems/ketab/support/modelmapper/ThemeMapperTest.class

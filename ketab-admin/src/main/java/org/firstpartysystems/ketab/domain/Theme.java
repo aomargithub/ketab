@@ -8,6 +8,11 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 @Entity
 @Table(name = "theme")
 public class Theme extends LookupEntity<Byte>{

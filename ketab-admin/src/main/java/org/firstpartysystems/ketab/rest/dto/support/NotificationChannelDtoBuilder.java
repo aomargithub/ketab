@@ -2,7 +2,7 @@ package org.firstpartysystems.ketab.rest.dto.support;
 
 import org.firstpartysystems.ketab.rest.dto.NotificationChannelDto;
 
-public class NotificationChannelDtoBuilder  extends LookupDtoBuilder<NotificationChannelDtoBuilder, NotificationChannelDto, Byte>{
+public class NotificationChannelDtoBuilder extends LookupDtoBuilder<NotificationChannelDtoBuilder, NotificationChannelDto, Byte>{
 
 	/**
 	 * 

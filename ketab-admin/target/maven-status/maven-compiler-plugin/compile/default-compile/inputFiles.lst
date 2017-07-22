@@ -12,6 +12,7 @@
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/service/ConfidentialityDegreeService.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/support/modelmapper/ModelMapper.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/ThemeDto.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/support/ThemeDtoBuilder.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/NotificationChannelDto.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/service/NotificationChannelService.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/support/NotificationChannelDtoBuilder.java
@@ -36,6 +37,7 @@
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/config/ApplicationConfig.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/config/PersistenceContext.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/exception/KetabInternalException.java
+/home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/support/ThemeBuilder.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/support/DomainModelBuilder.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/rest/dto/ConfidentialityDegreeDto.java
 /home/aomar/appsData/git/ketab/ketab-admin/src/main/java/org/firstpartysystems/ketab/domain/support/ConfidentialityDegreeBuilder.java

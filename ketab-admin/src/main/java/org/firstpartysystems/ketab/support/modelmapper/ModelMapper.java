@@ -7,6 +7,11 @@ import java.util.Set;
 import org.firstpartysystems.ketab.domain.DomainModel;
 import org.firstpartysystems.ketab.rest.dto.UserModel;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
 public interface ModelMapper<E extends DomainModel<?>, D extends UserModel<?>> extends Serializable{
 	
 	

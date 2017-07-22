@@ -9,6 +9,7 @@ org/firstpartysystems/ketab/domain/LookupEntity.class
 org/firstpartysystems/ketab/support/modelmapper/NotificationChannelMapper.class
 org/firstpartysystems/ketab/rest/controller/ConfidentialityDegreeController.class
 org/firstpartysystems/ketab/support/modelmapper/ModelMapper.class
+org/firstpartysystems/ketab/rest/dto/support/ThemeDtoBuilder.class
 org/firstpartysystems/ketab/repository/ConfidentialityDegreeRepository.class
 org/firstpartysystems/ketab/domain/support/DomainModelBuilder.class
 org/firstpartysystems/ketab/repository/NotificationChannelRepository.class
@@ -36,6 +37,7 @@ org/firstpartysystems/ketab/service/ConfidentialityDegreeService.class
 org/firstpartysystems/ketab/support/modelmapper/ThemeMapper.class
 org/firstpartysystems/ketab/domain/Theme.class
 org/firstpartysystems/ketab/domain/NotificationChannel.class
+org/firstpartysystems/ketab/domain/support/ThemeBuilder.class
 org/firstpartysystems/ketab/support/modelmapper/ConfidentialityDegreeMapper.class
 org/firstpartysystems/ketab/rest/dto/ConfidentialityDegreeDto.class
 org/firstpartysystems/ketab/rest/dto/ThemeDto.class

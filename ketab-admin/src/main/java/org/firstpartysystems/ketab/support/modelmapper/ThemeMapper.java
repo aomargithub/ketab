@@ -3,7 +3,14 @@ package org.firstpartysystems.ketab.support.modelmapper;
 import org.apache.log4j.Logger;
 import org.firstpartysystems.ketab.domain.Theme;
 import org.firstpartysystems.ketab.rest.dto.ThemeDto;
+import org.springframework.stereotype.Component;
 
+/**
+ * 
+ * @author Ahmad Omar
+ *
+ */
+@Component
 public class ThemeMapper extends AbstractModelMapper<Theme, ThemeDto>{
 
 	/**
